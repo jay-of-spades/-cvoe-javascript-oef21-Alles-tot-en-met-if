@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jay Santarina" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Oefining 20: Tickets</title>
+  </head>
+  <body>
+    <header>
+      <img src="media/magpie.png" alt="magpie" class="logo" />
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="404.html">Gallery</a></li>
+        <li><a href="404.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div id="main-center">
+        <h2>Vogel Vertaler</h2>
+        <form>
+          <input
+            type="button"
+            class="btn vogels"
+            name="vogels"
+            value="magpie"
+            placeholder="Ekster"
+            onclick="vogelVertaler(this)"
+          />
+          <input
+            type="button"
+            class="btn vogels"
+            name="vogels"
+            value="finch"
+            placeholder="Vink"
+            onclick="vogelVertaler(this)"
+          />
+          <input
+            type="button"
+            class="btn vogels"
+            name="vogels"
+            value="sparrow"
+            placeholder="Merel"
+            onclick="vogelVertaler(this)"
+          />
+          <div id="meldingen" class="hidden"></div>
+          <input type="button" class="btn hidden" value="reset" id="resetBTN"
+          placeholder="Reset" onclick="resetAll()"
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p class="copyright">&copy; Copyright 2023-present: Hooked on Coding</p>
+      <p>All rights reserved</p>
+    </footer>
+    <script src="js/scriptVogeltje.js"></script>
+  </body>
+</html>
